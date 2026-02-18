@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+main {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.form-container {
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-title-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title-form img {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-title-form p {
+    font-size: 2em;
+    font-weight: bold; 
+    color: rgb(44, 44, 44); 
+    margin-top: 7px; 
+}
+
+form {
+    margin: 25px 0px;
+}
+
+.fill-box input{
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+    
+}
+
+.fill-box label {
+    color: rgb(44, 44, 44);
+}
+
+.container-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-input {
+    display: flex;
+    align-items: center; 
+    gap: 9px;
+    cursor: pointer;
+}
+
+.checkbox-input span {
+    line-height: normal;
+}
+
+.checkbox-input input {
+    transform: scale(1.2) translateY(0.7px);
+    accent-color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+.container-checkbox a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(61, 61, 61);
+    color: rgb(243, 243, 243);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-submit:hover {
+    background-color: rgb(44, 44, 44);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="form-container">
+            <div class="logo-title-form">
+                <img src="logo-home.jpg" alt="">
+                <p>Login</p>
+            </div>
+            <form action="" method="post">
+                <div class="fill-box">
+                    <label for="email">Seu endereço de email:</label>
+                    <input type="email" name="email" id="email" minlength="5" maxlength="50" autocomplete="email" required>
+                </div>
+                <div class="fill-box">
+                    <label for="pass">Senha:</label>
+                    <input type="password" name="password" id="pass" maxlength="50" autocomplete="current-password" required>
+                </div>
+
+                <div class="container-checkbox">
+                    <label for="check" class="checkbox-input">
+                        <input type="checkbox" name="checkbox" id="check">
+                        <span>Mantenha-me conectado</span>
+                    </label>
+
+                    <a href="">Esqueceu sua senha?</a>
+                </div>
+
+                <button type="submit" class="btn-submit">Acessar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
