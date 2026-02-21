@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
@@ -11,32 +11,75 @@
 
 </head>
 <body>
-    
     <main class="main">
+        
         <div class="login-container">
-            <div class="login-content">
-                <h1 class="login-title">Login</h1>
-                <span class="login-span">Seja bem-vindo(a) novamente.</span>
-                <p class="login-paragraph">Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            </div>
-
-            <form class="form" action="login.php" method="post" autocomplete="on">
-                <div class="form-group">
-                    <div class="form-input">
-                        <label for="idemail"><span class="material-symbols-outlined person">person</span></label>
-                        <input type="email" name="email" id="idemail" placeholder="seu e-mail" autocomplete="email" maxlength="30" required>
-                    </div>
+            
+            <!-- HEADER Login -->
+            <header class="header-login">
                 
+                <h1 class="login-title">Login</h1>
+                <h2 class="login-subtitle">Welcome Back!</h2>
+                <p class="login-paragraph">Log in to access your account and configure your environment.</p>
+            </header>
+            
+            <!--  FORM  -->
+            <form class="form" action="#" method="post" autocomplete="on">
+
+                <div class="form-group">
+
+                    <!-- EMAIL -->
                     <div class="form-input">
-                        <label for="idpassword"><span class="material-symbols-outlined key">vpn_key</span></label>
-                        <input type="password" name="password" id="idpassword" placeholder="sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+                        
+                        <label for="idemail">
+                            <span class="material-symbols-outlined person">person</span>
+                        </label>
+                        <input 
+                        type="text" 
+                        name="email" 
+                        id="idemail" 
+                        placeholder="E-mail" 
+                        autocomplete="username" 
+                        maxlength="30" 
+                        required>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="form-input">
+
+                        <label for="idpassword">
+                            <span class="material-symbols-outlined key">vpn_key</span>
+                        </label>
+                        <input 
+                        type="password" 
+                        name="password" 
+                        id="idpassword" 
+                        placeholder="Password" autocomplete="current-password" 
+                        minlength="8" 
+                        maxlength="20" 
+                        required>
                     </div>
                 </div>
 
-                <button class="form-btn" type="submit">Entrar</button> 
+                <!-- Checkbox / Forgot password -->
+                <div class="form-group2">
+                    <div class="form-check">
+                        <input class="remember-checkbox" 
+                        type="checkbox" 
+                        name="remember" 
+                        id="check">
+                        <label for="check">Remember-me</label>
+                    </div>
+
+                    <a class="form-link forgot-pass" href="#" target="_blank">Forgot password? &#x2192</a>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button class="form-btn" type="submit">Continue</button> 
             </form>
 
-            <a class="forgot-pass" href="#" target="_blank">Esqueci a senha &#x2192</a>
+            <span class="register-link"><a class="form-link" href="#" target="_blank">Don't have account? Register</a></span>
+
         </div>
 
         <div class="login-img"></div>
